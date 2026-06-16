@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woodhaven Pipeline</title>
+<link rel="icon" href="/Dela-Tracker-Demo/company/favicon.svg" type="image/svg+xml">
+  <script type="module" crossorigin src="/Dela-Tracker-Demo/company/assets/index-Y9yY2SOk.js"></script>
+  <link rel="stylesheet" crossorigin href="/Dela-Tracker-Demo/company/assets/index-BZ0Y8fhh.css">
+</head>
+<body>
+<div id="auth-view" class="auth-shell" hidden>
+  <form id="auth-form" class="auth-panel">
+    <div class="auth-title">Woodhaven Pipeline</div>
+    <div class="auth-copy">Sign in with your company email.</div>
+    <label class="form-label" for="auth-email">Company email</label>
+    <input class="form-input" id="auth-email" type="email" autocomplete="email" required placeholder="name@company.com">
+    <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center;margin-top:.8rem">Send sign-in link</button>
+    <button class="btn" id="demo-btn" type="button" style="width:100%;justify-content:center;margin-top:.5rem">Try demo</button>
+    <div id="auth-message" class="auth-message" aria-live="polite"></div>
+  </form>
+</div>
+
+<div id="app-shell" class="app" hidden>
+  <div class="app-header">
+    <div><div class="app-title">Woodhaven Pipeline</div></div>
+    <div class="header-actions">
+      <button id="export-btn" class="btn" onclick="exportCSV()">Export CSV</button>
+      <button id="users-btn" class="btn" onclick="openUsersModal()" hidden>Users</button>
+      <button id="add-deal-btn" class="btn btn-primary" onclick="openAddDeal()">+ Add deal</button>
+      <div class="user-menu">
+        <span class="user-chip"><span id="user-email"></span><span id="user-role" class="role-pill"></span></span>
+        <button id="sign-out-btn" class="btn btn-sm" type="button">Sign out</button>
+      </div>
+    </div>
+  </div>
+  <div id="access-notice" class="notice" hidden></div>
+  <div class="section-label">Active deals</div>
+  <div id="pipeline-list"></div>
+</div>
+
+<div id="detail-overlay" class="detail-overlay" style="display:none" onclick="handleOverlayClick(event)">
+  <div class="detail-panel" id="detail-panel"></div>
+</div>
+<div id="modal-overlay" class="modal-overlay" style="display:none">
+  <div class="modal" id="modal-content"></div>
+</div>
+<div class="save-indicator" id="save-indicator">Saved</div>
+
+</body>
+</html>

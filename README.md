@@ -1,7 +1,11 @@
-﻿# Woodhaven Deal Tracker Demo
+# Woodhaven Deal Tracker
 
-Static demo build only. Use `?demo=1` for the no-login placeholder-data demo.
+Free GitHub Pages hosting for the Woodhaven Deal Tracker.
 
-Free GitHub Pages URL: https://xmadd0gx.github.io/Dela-Tracker-Demo/?demo=1
+Demo URL: https://xmadd0gx.github.io/Dela-Tracker-Demo/?demo=1
 
-Do not enter sensitive company information in demo mode.
+Company app URL: https://xmadd0gx.github.io/Dela-Tracker-Demo/company/
+
+The demo uses placeholder data in browser storage. Do not enter sensitive company information in demo mode.
+
+The company app uses Supabase Auth and Supabase database storage. Run the Supabase SQL setup and add approved users before storing real company data.
