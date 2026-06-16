@@ -5,17 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Woodhaven Pipeline</title>
 <link rel="icon" href="/Dela-Tracker-Demo/company/favicon.svg" type="image/svg+xml">
-  <script type="module" crossorigin src="/Dela-Tracker-Demo/company/assets/index-Y9yY2SOk.js"></script>
+  <script type="module" crossorigin src="/Dela-Tracker-Demo/company/assets/index-Bwzn6Zkx.js"></script>
   <link rel="stylesheet" crossorigin href="/Dela-Tracker-Demo/company/assets/index-BZ0Y8fhh.css">
 </head>
 <body>
 <div id="auth-view" class="auth-shell" hidden>
   <form id="auth-form" class="auth-panel">
     <div class="auth-title">Woodhaven Pipeline</div>
-    <div class="auth-copy">Sign in with your company email.</div>
+    <div class="auth-copy">Sign in with your company email and password.</div>
     <label class="form-label" for="auth-email">Company email</label>
     <input class="form-input" id="auth-email" type="email" autocomplete="email" required placeholder="name@company.com">
-    <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center;margin-top:.8rem">Send sign-in link</button>
+    <label class="form-label" for="auth-password" style="margin-top:.7rem">Password</label>
+    <input class="form-input" id="auth-password" type="password" autocomplete="current-password" placeholder="Password">
+    <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center;margin-top:.8rem">Sign in</button>
+    <button class="btn" id="magic-link-btn" type="button" style="width:100%;justify-content:center;margin-top:.5rem">Email sign-in link</button>
     <button class="btn" id="demo-btn" type="button" style="width:100%;justify-content:center;margin-top:.5rem">Try demo</button>
     <div id="auth-message" class="auth-message" aria-live="polite"></div>
   </form>
